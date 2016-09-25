@@ -1,0 +1,21 @@
+{
+  "name": "bigquery-schema-generator",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nw/bigquery-schema-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nw/bigquery-schema-generator/issues"
+  },
+  "homepage": "https://github.com/nw/bigquery-schema-generator",
+  "keywords": [
+    "bigquery",
+    "schema",
+    "google cloud",
+    "gcp"
+  ],
+  "author": "Nathan White <nw@nwhite.net> (http://nwhite.net)",
+  "license": "MIT"
+}
