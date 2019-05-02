@@ -12,12 +12,12 @@ function getMode(val) {
 
 
 function getType(val) {
+  if(typeof val === 'boolean') return "BOOLEAN"
   if(!isNaN(val)){
     if(Number.isInteger(parseFloat(val))) return "INTEGER"
     return "FLOAT" 
   }
   if(val instanceof Date) return "TIMESTAMP"
-  if(typeof val === 'boolean') return "BOOLEAN"
   if(Array.isArray(val)) return getType(val[0])
   if(typeof val === 'object') return "RECORD"
 
