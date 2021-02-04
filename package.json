@@ -17,5 +17,12 @@
     "gcp"
   ],
   "author": "Nathan White <nw@nwhite.net> (http://nwhite.net)",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
 }
