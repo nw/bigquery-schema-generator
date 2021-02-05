@@ -62,6 +62,7 @@ function mergeSchemas(original, generatedSchema) {
         mergeSchemas(origField, field);
       } else {
         origField.type = typeHierarchyReducer(origField.type, field.type);
+        origField.mode = origField.mode === "REPEATED" || field.mode === "REPEATED" ? "REPEATED" : "NULLABLE"
       }
     } else {
       original.fields.push(field);
