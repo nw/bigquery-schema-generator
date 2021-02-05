@@ -28,72 +28,103 @@ var schema = generator(pkg)
 The schema will look like:
 
 ```json
-[
-  {
-    "name": "name",
-    "type": "STRING",
-    "mode": "NULLABLE"
-  },
-  {
-    "name": "version",
-    "type": "STRING",
-    "mode": "NULLABLE"
-  },
-  {
-    "name": "main",
-    "type": "STRING",
-    "mode": "NULLABLE"
-  },
-  {
-    "name": "repository",
-    "type": "RECORD",
-    "mode": "NULLABLE",
-    "fields": [
-      {
-        "name": "type",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "url",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      }
-    ]
-  },
-  {
-    "name": "bugs",
-    "type": "RECORD",
-    "mode": "NULLABLE",
-    "fields": [
-      {
-        "name": "url",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      }
-    ]
-  },
-  {
-    "name": "homepage",
-    "type": "STRING",
-    "mode": "NULLABLE"
-  },
-  {
-    "name": "keywords",
-    "type": "STRING",
-    "mode": "REPEATED"
-  },
-  {
-    "name": "author",
-    "type": "STRING",
-    "mode": "NULLABLE"
-  },
-  {
-    "name": "license",
-    "type": "STRING",
-    "mode": "NULLABLE"
-  }
-]
+{
+  "fields": [
+    {
+      "name": "name",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "version",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "main",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "repository",
+      "type": "RECORD",
+      "mode": "NULLABLE",
+      "fields": [
+        {
+          "name": "type",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "url",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        }
+      ]
+    },
+    {
+      "name": "bugs",
+      "type": "RECORD",
+      "mode": "NULLABLE",
+      "fields": [
+        {
+          "name": "url",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        }
+      ]
+    },
+    {
+      "name": "homepage",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "keywords",
+      "type": "STRING",
+      "mode": "REPEATED"
+    },
+    {
+      "name": "author",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "license",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "scripts",
+      "type": "RECORD",
+      "mode": "NULLABLE",
+      "fields": [
+        {
+          "name": "test",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        }
+      ]
+    },
+    {
+      "name": "devDependencies",
+      "type": "RECORD",
+      "mode": "NULLABLE",
+      "fields": [
+        {
+          "name": "chai",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "mocha",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        }
+      ]
+    }
+  ]
+}
 ```
 
 ## License

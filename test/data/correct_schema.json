@@ -1,0 +1,622 @@
+{
+  "fields": [
+    {
+      "name": "dealId",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "dataChange",
+      "type": "RECORD",
+      "mode": "REPEATED",
+      "fields": [
+        {
+          "name": "object",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "timestamp",
+          "type": "DATETIME",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "data",
+          "type": "RECORD",
+          "mode": "NULLABLE",
+          "fields": [
+            {
+              "name": "id",
+              "type": "INTEGER",
+              "mode": "NULLABLE"
+            },
+            {
+              "name": "item_id",
+              "type": "INTEGER",
+              "mode": "NULLABLE"
+            },
+            {
+              "name": "user_id",
+              "type": "INTEGER",
+              "mode": "NULLABLE"
+            },
+            {
+              "name": "field_key",
+              "type": "STRING",
+              "mode": "NULLABLE"
+            },
+            {
+              "name": "new_value",
+              "type": "STRING",
+              "mode": "NULLABLE"
+            },
+            {
+              "name": "log_time",
+              "type": "DATETIME",
+              "mode": "NULLABLE"
+            },
+            {
+              "name": "change_source",
+              "type": "STRING",
+              "mode": "NULLABLE"
+            },
+            {
+              "name": "change_source_user_agent",
+              "type": "STRING",
+              "mode": "NULLABLE"
+            },
+            {
+              "name": "old_value",
+              "type": "STRING",
+              "mode": "NULLABLE"
+            },
+            {
+              "name": "additional_data",
+              "type": "RECORD",
+              "mode": "NULLABLE",
+              "fields": [
+                {
+                  "name": "old_value_formatted",
+                  "type": "STRING",
+                  "mode": "NULLABLE"
+                },
+                {
+                  "name": "new_value_formatted",
+                  "type": "STRING",
+                  "mode": "NULLABLE"
+                }
+              ]
+            },
+            {
+              "name": "is_bulk_update_flag",
+              "type": "BOOLEAN",
+              "mode": "NULLABLE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "deal",
+      "type": "RECORD",
+      "mode": "NULLABLE",
+      "fields": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "creator_user_id",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "user_id",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "person_id",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "org_id",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "stage_id",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "title",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "value",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "currency",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "add_time",
+          "type": "DATETIME",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "update_time",
+          "type": "DATETIME",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "active",
+          "type": "BOOLEAN",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "deleted",
+          "type": "BOOLEAN",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "status",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "visible_to",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "pipeline_id",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "products_count",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "files_count",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "notes_count",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "followers_count",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "email_messages_count",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "activities_count",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "done_activities_count",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "undone_activities_count",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "participants_count",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Owner_Team",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Invoicing_Demos_Group_organisation",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Revenue_H1_2021",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Revenue_H1_2021",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Gross_profit_H1_2021",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Gross_profit_H1_2021",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Impact_leverage",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "stage_order_nr",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "person_name",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "org_name",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "formatted_value",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "weighted_value",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "formatted_weighted_value",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "weighted_value_currency",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "rotten_time",
+          "type": "DATETIME",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "owner_name",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "cc_email",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "org_hidden",
+          "type": "BOOLEAN",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "person_hidden",
+          "type": "BOOLEAN",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "stage_change_time",
+          "type": "DATETIME",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "last_activity_id",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "last_activity_date",
+          "type": "DATE",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "expected_close_date",
+          "type": "DATE",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "probability",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "close_time",
+          "type": "DATETIME",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "won_time",
+          "type": "DATETIME",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "first_won_time",
+          "type": "DATETIME",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Theme_or_Topic",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Revenue_H1_2018",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Revenue_H1_2019",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Revenue_H1_2019",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Revenue_H2_2019",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Revenue_H2_2019",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Gross_profit_H1_2018",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Gross_profit_H1_2018",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Revenue_H2_2018",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Revenue_H2_2018",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Gross_profit_H2_2018",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Gross_profit_H2_2018",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Gross_profit_H1_2019",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Gross_profit_H1_2019",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Gross_profit_H2_2019",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Gross_profit_H2_2019",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Revenue_H1_2020",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Revenue_H1_2020",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Gross_profit_H1_2020",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Gross_profit_H1_2020",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Revenue_H2_2021",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Revenue_H2_2021",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Gross_profit_H2_2021",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Gross_profit_H2_2021",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Misc_Information",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "STN",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Revenue_H2_2020",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Revenue_H2_2020",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Gross_profit_H2_2020",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Gross_profit_H2_2020",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "next_activity_date",
+          "type": "DATE",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "next_activity_id",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "lost_reason",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "lost_time",
+          "type": "DATETIME",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "next_activity_subject",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "next_activity_type",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "next_activity_duration",
+          "type": "TIME",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Revenue_H1_2023",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Revenue_H1_2023",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Gross_profit_H1_2023",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Gross_profit_H1_2023",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Revenue_H1_2022",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Revenue_H1_2022",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Revenue_H2_2022",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Revenue_H2_2022",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Gross_profit_H1_2022",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Gross_profit_H1_2022",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Gross_profit_H2_2022",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Currency_of_Gross_profit_H2_2022",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "Impact_Leverage__OLD_",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        }
+      ]
+    },
+    {
+      "name": "timeInserted",
+      "type": "TIMESTAMP",
+      "mode": "NULLABLE"
+    }
+  ]
+}
