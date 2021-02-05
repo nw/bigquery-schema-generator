@@ -8,4 +8,7 @@ describe("check generate function", () => {
   it("should generate the schema", ()=> {
     expect(generator(json)).to.eql(correct_schema);
   })
+  it("it shouldn't fail when there is an empty array", ()=> {
+    generator([]);
+  })
 })

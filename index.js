@@ -74,7 +74,7 @@ function mergeSchemas(original, generatedSchema) {
 function traverse(data) {
   if (Array.isArray(data)) {
     // We have to merge all the objects with the same keys, that forces us to create a hierarchy of types
-    return data.filter(dataItem => dataItem !== null).map(dataItem => traverse(dataItem)).reduce(mergeSchemas);
+    return data.filter(dataItem => dataItem !== null).map(dataItem => traverse(dataItem)).reduce(mergeSchemas, {fields: []});
   } else {
     // We filter the fields with null value because we don't need them.
     return {
